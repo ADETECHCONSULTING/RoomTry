@@ -3,6 +3,8 @@ package traore.adama.roomtry;
 import android.app.Application;
 import android.arch.persistence.room.Room;
 
+import traore.adama.roomtry.database.GameDatabase;
+
 public class MyApplication extends Application {
     private GameDatabase db;
 

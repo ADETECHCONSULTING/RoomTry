@@ -1,4 +1,4 @@
-package traore.adama.roomtry;
+package traore.adama.roomtry.database.model;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
@@ -24,6 +24,9 @@ public class Game {
         return uid;
     }
 
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
 
     public String getUserName() {
         return userName;

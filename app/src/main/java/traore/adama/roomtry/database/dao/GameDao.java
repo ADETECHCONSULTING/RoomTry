@@ -1,11 +1,14 @@
-package traore.adama.roomtry;
+package traore.adama.roomtry.database.dao;
 
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Delete;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
+import android.arch.persistence.room.Update;
 
 import java.util.List;
+
+import traore.adama.roomtry.database.model.Game;
 
 @Dao
 public interface GameDao {
@@ -20,4 +23,7 @@ public interface GameDao {
 
     @Delete
     void delete(Game game);
+
+    @Update
+    void update(Game game);
 }
